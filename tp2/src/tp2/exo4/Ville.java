@@ -52,21 +52,17 @@ public class Ville {
 		return nom+" comporte "+nbHabitants+" habitants.";
 	}
 	
-	public char categorie() {
-		try {
-			((Capitale) this).getNomPays();
-			return 'C';
-		} catch (Exception e) {
-			if (this.getNbHabitants() < 500000 && this.getNbHabitants() != 0) {
-				return 'A';
-			}
-			else if (this.getNbHabitants() >= 500000 ){
-				
-			}
-			else if (this.getNbHabitants() == 0) {
-				return '?';
-			}
+	// on utilisera que dans des cas très précis l'utilisation de char
+	public String categorie() {
+		// pour la categorie on travaillera par surcharge de méthode
+		if (this.getNbHabitants() < 500000 && this.getNbHabitants() != 0) {
+			return "A";
 		}
-		return 0;
+		else if (this.getNbHabitants() >= 500000 ){
+			return "B";
+		}
+		else if (this.getNbHabitants() == 0) {
+			return "?";
+		}
 	}
 }
