@@ -5,13 +5,14 @@ public class Capitale extends Ville {
 	private final String nomPays;
 	
 	//Constructeur
-	public Capitale(String nom, String Pays) {
+	// attention les variables sont écrit en lowerCamelCase (minuscule au début)
+	public Capitale(String nom, String pays) {
 		super(nom);
-		this.nomPays = Pays.toUpperCase();		
+		this.nomPays = pays.toUpperCase();		
 	}
-	public Capitale(String nom, String Pays, int nbHabitants) {
+	public Capitale(String nom, String pays, int nbHabitants) {
 		super(nom, nbHabitants);
-		this.nomPays = Pays.toUpperCase();		
+		this.nomPays = pays.toUpperCase();		
 	}
 	
 	//Getter
