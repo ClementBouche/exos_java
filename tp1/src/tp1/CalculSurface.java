@@ -6,6 +6,7 @@ public class CalculSurface {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Rayon = ");
+		// on utilisera directement nextFloat() pour ne pas avoir à parser le String
 		String input = scanner.nextLine();
 		try {
 			float r = Float.parseFloat(input);
