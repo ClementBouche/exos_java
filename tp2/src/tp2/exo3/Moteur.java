@@ -2,9 +2,15 @@ package tp2.exo3;
 
 
 public class Moteur{
+	
 	private int nbChevaux;
 	
-	/*** Setters and Getters ***/
+	// Constructor
+	public Moteur(int nbChev) {
+		this.nbChevaux = nbChev;
+	}
+	
+	// Setters and Getters
 	public void setNbChevaux(int nbChev) {
 		this.nbChevaux = nbChev;
 		}
@@ -12,4 +18,5 @@ public class Moteur{
 	public int getNbChevaux() {
 		return this.nbChevaux;
 	}
+
 }
