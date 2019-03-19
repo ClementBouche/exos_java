@@ -14,6 +14,7 @@ public abstract class AnimalSauvage extends Animal {
 	}
 	
 	public String toString() {
+		// attention ici au premier appel a super.toString() (surement un copié collé)
 		super.toString();
 		return super.toString() + " Je suis un Animal Sauvage.";
 	}
